@@ -1,5 +1,8 @@
 # VinaFlow
-A GUI wrapper for AutoDock Vina.
+<p align="center">
+  <img src="assets/vinaflow-icon.png" width="60"><br>
+  <strong>A GUI wrapper for AutoDock Vina</strong>
+</p>
 
 VinaFlow uses AutoDock Vina, an open-source docking engine distributed under the Apache 2.0 licence by The Scripps Research Institute.
 AutoDock Vina is available at: https://github.com/ccsb-scripps/AutoDock-Vina

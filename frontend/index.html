@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VinaFlow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>VinaFlow</h1>
+
+  <form id="docking-form">
+    <label>
+      Receptor path:
+      <input type="text" name="receptor_path" value="protein.pdbqt">
+    </label><br>
+
+    <label>
+      Ligand path:
+      <input type="text" name="ligand_path" value="ligand.pdbqt">
+    </label><br>
+
+    <label>
+      Center (x, y, z):
+      <input type="number" step="0.001" name="center_x" value="-5.027">
+      <input type="number" step="0.001" name="center_y" value="-2.707">
+      <input type="number" step="0.001" name="center_z" value="-0.761">
+    </label><br>
+
+    <label>
+      Size (x, y, z):
+      <input type="number" step="1" name="size_x" value="46">
+      <input type="number" step="1" name="size_y" value="46">
+      <input type="number" step="1" name="size_z" value="46">
+    </label><br>
+
+    <label>
+      Runs:
+      <input type="number" name="runs" value="3" min="1" max="20">
+    </label><br>
+
+    <label>
+      Exhaustiveness:
+      <input type="range" name="exhaustiveness" min="4" max="32" value="8">
+      <span id="exhaustiveness-value">8</span>
+    </label><br>
+
+    <button type="submit">Run docking</button>
+  </form>
+
+  <pre id="output"></pre>
+
+  <script src="main.js"></script>
+</body>
+</html>
